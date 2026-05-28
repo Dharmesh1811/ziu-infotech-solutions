@@ -1,67 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
 @layer base {
   :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
 
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
 
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 187 92% 50%;
-    --primary-foreground: 222 47% 6%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 222 47% 12%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 222 30% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 187 92% 50%;
-    --accent-foreground: 222 47% 6%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 222 30% 18%;
-    --input: 222 30% 18%;
-    --ring: 187 92% 50%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 221 83% 53%;
 
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(187 92% 50%), hsl(199 89% 48%));
-    --gradient-secondary: linear-gradient(135deg, hsl(222 47% 12%), hsl(222 47% 8%));
-    --gradient-hero: linear-gradient(180deg, hsl(222 47% 6%) 0%, hsl(222 47% 10%) 100%);
-    --gradient-glow: radial-gradient(ellipse at center, hsl(187 92% 50% / 0.15) 0%, transparent 70%);
+    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(262 83% 58%));
+    --gradient-secondary: linear-gradient(135deg, hsl(214 100% 97%), hsl(270 100% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(214 100% 97%) 0%, hsl(270 100% 98%) 52%, hsl(327 100% 97%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(221 83% 53% / 0.14) 0%, transparent 70%);
     
-    --shadow-glow: 0 0 40px hsl(187 92% 50% / 0.2);
-    --shadow-card: 0 8px 32px hsl(222 47% 4% / 0.5);
-    --shadow-elevated: 0 20px 60px hsl(222 47% 4% / 0.6);
+    --shadow-glow: 0 12px 36px hsl(221 83% 53% / 0.2);
+    --shadow-card: 0 8px 32px hsl(222 47% 11% / 0.08);
+    --shadow-elevated: 0 20px 60px hsl(222 47% 11% / 0.12);
 
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --sidebar-background: 222 47% 8%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 187 92% 50%;
-    --sidebar-primary-foreground: 222 47% 6%;
-    --sidebar-accent: 222 47% 12%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 222 30% 18%;
-    --sidebar-ring: 187 92% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 221 83% 53%;
   }
 
   .dark {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
   }
 }
 
@@ -91,7 +91,7 @@
   }
 
   .glass-card {
-    @apply bg-card/50 backdrop-blur-xl border border-border/50;
+    @apply bg-card/80 backdrop-blur-xl border border-border shadow-lg;
   }
 
   .glow-border {
@@ -160,8 +160,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(187 92% 50% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(187 92% 50% / 0.5); }
+  0%, 100% { box-shadow: 0 0 20px hsl(221 83% 53% / 0.2); }
+  50% { box-shadow: 0 0 40px hsl(262 83% 58% / 0.25); }
 }
 
 @keyframes fade-up {
@@ -180,7 +180,7 @@
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent 0%, hsl(187 92% 50% / 0.1) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, hsl(221 83% 53% / 0.1) 50%, transparent 100%);
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }
