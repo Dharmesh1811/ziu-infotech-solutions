@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
 
               {/* Author */}
               <div className="flex items-center gap-3 pt-4 border-t border-border/50">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-cyan-400 flex items-center justify-center text-primary-foreground font-semibold text-sm">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-purple-600 flex items-center justify-center text-primary-foreground font-semibold text-sm">
                   {testimonial.avatar}
                 </div>
                 <div>

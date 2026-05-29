@@ -14,7 +14,7 @@ const TeamSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
           {/* Background Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-cyan-400/5" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-purple-500/5" />
           
           <div className="relative z-10">
             {/* Header */}

@@ -16,7 +16,7 @@ const ServicesSection = () => {
       title: "CMS & Business Websites",
       description: "Professional WordPress, corporate websites, portfolios with SEO-friendly & responsive design.",
       features: ["WordPress Development", "Corporate Websites", "Portfolio Sites", "SEO Optimization"],
-      color: "from-blue-500 to-cyan-400"
+      color: "from-blue-500 to-purple-500"
     },
     {
       icon: Code,
@@ -125,7 +125,7 @@ const ServicesSection = () => {
           </div>
           <a
             href="#contact"
-            className="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-cyan-400 text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(187_92%_50%/0.4)] hover:scale-105 transition-all duration-300"
+            className="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-purple-600 text-primary-foreground font-semibold hover:shadow-[0_12px_32px_hsl(221_83%_53%/0.28)] hover:scale-105 transition-all duration-300"
           >
             Get Free Consultation
           </a>

@@ -27,12 +27,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-cyan-400 flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-lg">Z</span>
-              </div>
-              <span className="font-heading font-bold text-xl">
-                ZIU <span className="gradient-text">Infotech</span>
+            <div className="mb-4 inline-flex flex-col items-center justify-center">
+              <img src="/ziu_logo.png" alt="ZIU" className="h-8 w-auto object-contain" />
+              <span className="mt-1 font-heading text-base font-medium leading-none text-primary">
+                Infotech
               </span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">

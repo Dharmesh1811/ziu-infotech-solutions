@@ -79,8 +79,8 @@ const AboutSection = () => {
             <div className="absolute -top-8 -right-8 w-16 h-16 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center animate-float">
               <Users className="w-8 h-8 text-primary" />
             </div>
-            <div className="absolute -bottom-8 -left-8 w-16 h-16 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
-              <Award className="w-8 h-8 text-cyan-400" />
+            <div className="absolute -bottom-8 -left-8 w-16 h-16 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center animate-float" style={{ animationDelay: '2s' }}>
+              <Award className="w-8 h-8 text-purple-600" />
             </div>
           </div>
         </div>

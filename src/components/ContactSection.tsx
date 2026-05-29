@@ -137,7 +137,7 @@ const ContactSection = () => {
             </div>
 
             {/* CTA Card */}
-            <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-primary/10 to-cyan-400/10 border-primary/20">
+            <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-primary/10 to-purple-500/10 border-primary/20">
               <h3 className="font-heading font-semibold text-xl mb-3">
                 Ready to Start Your Project?
               </h3>
