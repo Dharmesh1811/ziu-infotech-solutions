@@ -55,6 +55,8 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-semibold border border-primary/30 px-3 py-1.5 rounded-lg hover:bg-primary/10 hover:border-primary/60" target="_blank"
               >
                 {link.name}
@@ -74,6 +76,8 @@ const Navbar = () => {
                 key={link.name}
                 href={isCrmPage ? `/${link.href}` : link.href}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+                target={link.name === "CRM" ? "_blank" : undefined}
+                rel={link.name === "CRM" ? "noopener noreferrer" : undefined}
               >
                 {link.name}
               </a>
@@ -126,7 +130,8 @@ const Navbar = () => {
                   href={isCrmPage ? `/${link.href}` : link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  target="_blank"
+                  target={link.name === "CRM" ? "_blank" : undefined}
+                  rel={link.name === "CRM" ? "noopener noreferrer" : undefined}
                 >
                   {link.name}
                 </a>

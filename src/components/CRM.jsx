@@ -14,7 +14,30 @@ import {Contact} from "./crm_landing_page/Contact";
 import {Footer} from "./crm_landing_page/Footer";
 // import './crm_landing_page/styles/index.css'
 
+import { useEffect } from "react";
+
 export default function CRM() {
+  useEffect(() => {
+    const originalTitle = document.title;
+    document.title = "Z IU CRM";
+    
+    let link = document.querySelector("link[rel~='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+    }
+    const originalHref = link.href;
+    link.href = '/public/landing_page_imanges/z_logo.png';
+
+    return () => {
+      document.title = originalTitle;
+      if (link) {
+        link.href = originalHref;
+      }
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />

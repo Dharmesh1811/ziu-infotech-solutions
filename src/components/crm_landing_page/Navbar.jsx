@@ -33,7 +33,9 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src={logo} alt="Ziu CRM Logo" className="h-10 sm:h-12 w-auto object-contain rounded" />
+            <a href="/crm" className="flex items-center gap-2">
+              <img src={logo} alt="Ziu CRM Logo" className="h-10 sm:h-12 w-auto object-contain rounded" />
+            </a>
           </div>
  
           {/* Desktop Menu */}
