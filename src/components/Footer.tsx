@@ -28,7 +28,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="mb-4 inline-flex flex-col items-center justify-center">
-              <img src="/ziu-logo.png" alt="ZIU" className="h-8 w-auto object-contain" />
+              <img src="/Ziu_logo.png" alt="ZIU" className="h-8 w-auto object-contain" />
               <span className="mt-1 font-heading text-base font-medium leading-none text-primary">
                 Infotech
               </span>
