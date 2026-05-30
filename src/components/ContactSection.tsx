@@ -33,7 +33,7 @@ const ContactSection = () => {
 
   const contactInfo = [
     { icon: Mail, label: "Email", value: "info@ziuinfotech.com", href: "mailto:info@ziuinfotech.com" },
-    { icon: Phone, label: "Phone", value: "+91 XXXXXXXXXX", href: "tel:+91XXXXXXXXXX" },
+    { icon: Phone, label: "Phone", value: "+91 81281 66631", href: "tel:+91 81281 66631" },
     { icon: Globe, label: "Website", value: "www.ziuinfotech.com", href: "https://www.ziuinfotech.com" },
     { icon: MapPin, label: "Location", value: "India", href: "#" },
   ];

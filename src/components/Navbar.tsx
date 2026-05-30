@@ -19,13 +19,13 @@ const Navbar = () => {
   const isCrmPage = location.pathname === "/crm";
 
   const navLinks = [
-    { name: "Home", href: "#home", isRoute: false },
-    { name: "About", href: "#about", isRoute: false },
-    { name: "Services", href: "#services", isRoute: false },
-    { name: "Why Us", href: "#why-us", isRoute: false },
-    { name: "Reviews", href: "#reviews", isRoute: false },
-    { name: "Contact", href: "#contact", isRoute: false },
-    { name: "CRM", href: "http://localhost:5173/", isRoute: true, isExternal: false },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Why Us", href: "#why-us" },
+    { name: "Reviews", href: "#reviews" },
+    { name: "Contact", href: "#contact" },
+    { name: "CRM", href: "/crm" },
   ];
 
   return (
@@ -42,7 +42,7 @@ const Navbar = () => {
           className="flex flex-col items-center justify-center px-1 py-1"
           aria-label="ZIU Infotech home"
         >
-          <img src="/ziu_logo.png" alt="ZIU" className="h-7 w-auto object-contain" />
+          <img src="/Ziu_logo.png" alt="ZIU" className="h-7 w-auto object-contain" />
           <span className="mt-0.5 font-heading text-sm font-medium leading-none text-primary">
             Infotech
           </span>
@@ -55,6 +55,8 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm font-semibold border border-primary/30 px-3 py-1.5 rounded-lg hover:bg-primary/10 hover:border-primary/60" target="_blank"
               >
                 {link.name}
@@ -74,6 +76,8 @@ const Navbar = () => {
                 key={link.name}
                 href={isCrmPage ? `/${link.href}` : link.href}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium"
+                target={link.name === "CRM" ? "_blank" : undefined}
+                rel={link.name === "CRM" ? "noopener noreferrer" : undefined}
               >
                 {link.name}
               </a>
@@ -126,7 +130,8 @@ const Navbar = () => {
                   href={isCrmPage ? `/${link.href}` : link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
-                  target="_blank"
+                  target={link.name === "CRM" ? "_blank" : undefined}
+                  rel={link.name === "CRM" ? "noopener noreferrer" : undefined}
                 >
                   {link.name}
                 </a>
