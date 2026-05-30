@@ -28,7 +28,7 @@ export default function CRM() {
       document.head.appendChild(link);
     }
     const originalHref = link.href;
-    link.href = '/public/landing_page_imanges/z_logo.png';
+    link.href = '/public/landing_page_imanges/z_crm_logo.png';
 
     return () => {
       document.title = originalTitle;
