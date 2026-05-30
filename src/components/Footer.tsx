@@ -45,7 +45,7 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
               </a>
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+91 81281 66631"
                 className="w-10 h-10 rounded-lg bg-card border border-border/50 flex items-center justify-center hover:border-primary/50 hover:text-primary transition-colors duration-200"
               >
                 <Phone className="w-4 h-4" />
@@ -98,7 +98,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 text-primary" />
-                <span>+91 XXXXXXXXXX</span>
+                <span>+91 81281 66631</span>
               </li>
               <li className="flex items-start gap-2">
                 <Globe className="w-4 h-4 mt-0.5 text-primary" />
