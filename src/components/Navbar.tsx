@@ -42,7 +42,7 @@ const Navbar = () => {
           className="flex flex-col items-center justify-center px-1 py-1"
           aria-label="ZIU Infotech home"
         >
-          <img src="/ziu_logo.png" alt="ZIU" className="h-7 w-auto object-contain" />
+          <img src="/Ziu_logo.png" alt="ZIU" className="h-7 w-auto object-contain" />
           <span className="mt-0.5 font-heading text-sm font-medium leading-none text-primary">
             Infotech
           </span>

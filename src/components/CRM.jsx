@@ -19,7 +19,7 @@ import { useEffect } from "react";
 export default function CRM() {
   useEffect(() => {
     const originalTitle = document.title;
-    document.title = "Z IU CRM";
+    document.title = "ZIU CRM";
     
     let link = document.querySelector("link[rel~='icon']");
     if (!link) {
