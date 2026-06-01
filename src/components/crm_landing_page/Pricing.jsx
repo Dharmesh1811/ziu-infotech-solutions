@@ -13,39 +13,41 @@ export function Pricing() {
       description: 'Perfect to try out our features',
       features: [
         { text: '7 Days Validity', included: true },
+        { text: 'Basic user management', included: true },
         { text: 'Basic lead management', included: true },
-        { text: 'Email Support', included: true },
+        { text: 'Email Support', included: false },
         { text: 'WhatsApp Integration', included: false },
         { text: 'Advanced reports & analytics', included: false },
         { text: 'Priority support', included: false },
+        { text: 'Other Features', included: false },
       ],
       popular: false,
       cta: 'Choose Plan',
     },
     {
       name: 'Business Lite',
-      price: '149',
-      priceSubtitle: 'Per Telecaller per month',
-      totalPrice: '299',
+      totalPrice: '499',
+      priceSubtitle: 'For 30 days',
       period: '30 Days',
       telecallersBadge: '2 Telecallers',
       description: 'Ideal for small teams getting started',
       features: [
         { text: '30 Days Validity', included: true },
         { text: 'Standard lead management', included: true },
+        { text: 'Basic Analytics', included: true },
         { text: 'WhatsApp Integration', included: true },
-        { text: 'Email Support', included: true },
-        { text: 'Advanced reports & analytics', included: false },
+        { text: 'Email Support', included: false },
         { text: 'Priority support', included: false },
+        { text: 'Other Features', included: false },
+
       ],
       popular: false,
       cta: 'Choose Plan',
     },
     {
       name: 'Business Pro',
-      price: '111',
-      priceSubtitle: 'Per Telecaller per month',
-      totalPrice: '1999',
+      totalPrice: '5,999',
+      priceSubtitle: 'For 180 days',
       period: '180 Days',
       telecallersBadge: '3 Telecallers',
       description: 'For growing teams that need more power',
@@ -53,6 +55,8 @@ export function Pricing() {
         { text: '180 Days Validity', included: true },
         { text: 'Advanced lead management', included: true },
         { text: 'WhatsApp Integration', included: true },
+        { text: 'Task management', included: true },
+        { text: 'Auto Dialer', included: true },
         { text: 'Advanced reports & analytics', included: true },
         { text: 'Priority support', included: true },
         { text: 'Dedicated support', included: false },
@@ -62,9 +66,8 @@ export function Pricing() {
     },
     {
       name: 'Enterprise',
-      price: '99',
-      priceSubtitle: 'Per Telecaller per month',
-      totalPrice: '5999',
+      totalPrice: '9,999',
+      priceSubtitle: 'For 365 days',
       period: '365 Days',
       telecallersBadge: 'Custom Telecallers',
       description: 'For large organizations with custom needs',
@@ -127,26 +130,28 @@ export function Pricing() {
 
                 <div className="mb-4">
                   <div className="flex items-center justify-center">
-                    <span className={`text-3xl font-bold ${plan.popular ? 'text-white' : 'text-gray-800'}`}>
-                      {plan.price === '0' ? 'Free' : '₹' + plan.price}
-                    </span>
-                  </div>
+  <span className={`text-3xl font-bold ${plan.popular ? 'text-white' : 'text-gray-800'}`}>
+    {plan.price === '0' ? 'Free / 7 Days' : `₹${plan.totalPrice}`}
+  </span>
+</div>
                   {plan.priceSubtitle && (
                     <div className={`text-sm mt-3 ${plan.popular ? 'text-blue-100' : 'text-gray-500'}`}>
                       {plan.priceSubtitle}
+                       {/* <div className={`text-sm font-bold ${plan.popular ? 'text-blue-200' : 'text-gray-600'}`}>
+                    / {plan.period}
+                  </div> */}
                     </div>
                   )}
+                 
                 </div>
 
                 <div className="flex items-baseline justify-center gap-1.5 mb-6">
-                  {plan.totalPrice !== null && (
+                  {/* {plan.totalPrice !== null && (
                     <div className={`text-lg font-bold ${plan.popular ? 'text-white' : 'text-gray-900'}`}>
                        ₹{plan.totalPrice}
                     </div>
-                  )}
-                  <div className={`text-sm font-bold ${plan.popular ? 'text-blue-200' : 'text-gray-600'}`}>
-                    / {plan.period}
-                  </div>
+                  )} */}
+                  
                 </div>
 
                 <div className={`inline-block px-4 py-1.5 rounded-full text-xs font-semibold ${plan.popular
